@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Menu | Vedha's Kitchen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .menu-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+            background: white;
+            box-shadow: var(--shadow-md);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .menu-table th,
+        .menu-table td {
+            padding: 1.5rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .menu-table th {
+            background-color: var(--color-primary);
+            color: white;
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+        }
+
+        .menu-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .menu-table tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        .day-col {
+            font-weight: bold;
+            color: var(--color-primary);
+            width: 15%;
+        }
+
+        @media (max-width: 768px) {
+            .menu-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar (Repeated) -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.jpeg" alt="Vedha's Kitchen Logo">
+                Vedha's Kitchen
+            </a>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Weekly Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="btn btn-primary">Order Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" style="height: 40vh;">
+        <div class="container hero-content">
+            <h1>Our Weekly Menu</h1>
+            <p>Fresh, Home-cooked meals for every day of the week.</p>
+        </div>
+    </header>
+
+    <section class="menu-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Weekly Schedule</h2>
+                <p>Breakfast, Lunch, and Dinner</p>
+            </div>
+
+            <div style="overflow-x:auto;">
+                <table class="menu-table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Breakfast</th>
+                            <th>Lunch</th>
+                            <th>Dinner</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="day-col">Monday</td>
+                            <td>Idli (3), Mini Masala Dosa, Sambar + Coconut Chutney + Mint Chutney</td>
+                            <td>Mixed Veg Sambar + Beans Poriyal + Moong Dal Kootu</td>
+                            <td>Idli (3) + Paniyaram, Tomato Kurma, Coconut Chutney</td>
+                        </tr>
+                        <tr>
+                            <td class="day-col">Tuesday</td>
+                            <td>Idli (3), Rava Kichadi, Sambar + Tomato Chutney + Coconut Chutney</td>
+                            <td>Sambar + Vathal Kuzhambu + Potato Roast + Keerai Kootu</td>
+                            <td>Idli (3) + Navadhanya Dosa, Tomato Sambar, Coconut Chutney</td>
+                        </tr>
+                        <tr>
+                            <td class="day-col">Wednesday</td>
+                            <td>Idli (3), Rava Dosa, Sambar + Mint Chutney + Coconut Chutney</td>
+                            <td>Sambar + SPL Kuzhambu, Tomato Rasam + Cabbage Poriyal + Chow Chow Kootu</td>
+                            <td>Idli (3) + Chapati (3 pcs), Veg Kurma, Coconut Chutney</td>
+                        </tr>
+                        <tr>
+                            <td class="day-col">Thursday</td>
+                            <td>Idli (3), Sambar, Poori + Masala, Coconut Chutney + Tomato Chutney</td>
+                            <td>Sambar + Mor Kuzhambu + Paruppu Usili + Carrot Poriyal</td>
+                            <td>Idli (3) + Idiyappam + Coconut Milk + Veg Kurma</td>
+                        </tr>
+                        <tr>
+                            <td class="day-col">Friday</td>
+                            <td>Idli (3), Mini Podi Dosa, Sambar + Tomato Chutney + Coconut Chutney</td>
+                            <td>Arachuvitta Sambar + Beans-Carrot Poriyal + Snake Gourd Kootu</td>
+                            <td>Idli (3) + Vadacurry, Dosa + Sambar + Coconut Chutney</td>
+                        </tr>
+                        <tr>
+                            <td class="day-col">Saturday</td>
+                            <td>Idli (3), Mini Vegetable Dosa, Sambar + Tomato Chutney + Coconut Chutney</td>
+                            <td>Sambar + Kara Kuzhambu + Ladies Finger Fry + Moong Dal Kootu</td>
+                            <td>Idli (3) + Curd Semiya, Sambar + Coconut Chutney + Mint Chutney</td>
+                        </tr>
+                        <tr>
+                            <td class="day-col">Sunday</td>
+                            <td>Idli, Ven Pongal, Sambar + Coconut Chutney + Mint Chutney</td>
+                            <td>Veg Biryani / Variety Rice + Raitha + Poriyal</td>
+                            <td>Paruppu Adai, Idli (2 pcs) + Avial + Sambar + Coconut Chutney</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="margin-top: 3rem; text-align: center;">
+                <h3>Special Orders</h3>
+                <p>We also offer <strong>Diabetic Food</strong>, <strong>Salad Bowl Packages</strong>, and
+                    <strong>Healthy Snacks</strong>.
+                </p>
+                <p>Pickles and Podi varieties are also available.</p>
+                <br>
+                <a href="contact.html" class="btn btn-primary">Book Your Plan Now</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Vedha's Kitchen</h3>
+                    <p>Traditional Brahmin Home Cooking in Chinnasalem.</p>
+                    <div style="margin-top: 1rem;">
+                        <i class="fab fa-whatsapp" style="margin-right: 10px;"></i>
+                        <a href="https://www.instagram.com/vedha_skitchenchinnasalem?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                            target="_blank"><i class="fab fa-instagram" style="margin-right: 10px;"></i></a>
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Weekly Menu</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> No.4, Thiru.Vi.Ka.Nagar, Opp. Sengunthar Mandapam,
+                        Chinnasalem.</p>
+                    <p><i class="fas fa-phone"></i> +91 86109 27275</p>
+                    <p><i class="fas fa-phone"></i> +91 98949 99488</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vedha's Kitchen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
