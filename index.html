@@ -1,32 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ta">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vedha's Kitchen | Traditional Brahmin Home Cooking</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description"
+        content="Vedha's Kitchen — Traditional Brahmin home-cooked vegetarian meals in Chinnasalem. Delicious food that satisfies hunger.">
+    <meta property="og:title" content="Vedha's Kitchen | Traditional Brahmin Home Cooking">
+    <meta property="og:description"
+        content="Traditional Brahmin home-cooked vegetarian meals — subscriptions and home delivery in Chinnasalem.">
+    <meta property="og:image" content="assets/logo.jpeg">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vedha's Kitchen | Traditional Brahmin Home Cooking</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -34,7 +27,7 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="logo">
+            <a href="#home" class="logo">
                 <img src="assets/logo.jpeg" alt="Vedha's Kitchen Logo">
                 Vedha's Kitchen
             </a>
@@ -42,84 +35,229 @@
                 <i class="fas fa-bars"></i>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="menu.html">Weekly Menu</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="contact.html" class="btn btn-primary">Order Now</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#booking" class="btn btn-primary">Book Now</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero">
+    <header id="home" class="hero">
         <div class="container hero-content">
-            <h1>Traditional Brahmin Home Cooking</h1>
-            <p>100% Vegetarian. Pure, Healthy, and Delicious. Delivered right to your doorstep in Hot Packs.</p>
-            <div style="margin-top: 2rem;">
-                <a href="menu.html" class="btn btn-secondary">View Menu</a>
-                <a href="contact.html" class="btn btn-primary">Order via WhatsApp</a>
+            <div class="hero-logo-wrapper">
+                <img src="assets/logo.jpeg" alt="Vedha's Kitchen Emblem" class="hero-logo">
+            </div>
+            <h1>Vedha's Kitchen</h1>
+            <p class="tagline">"பசிக்குத் தீரும் சுவை உணவு"</p>
+            <p class="sub-tagline">(Delicious food that satisfies hunger)</p>
+            <div class="centered">
+                <a href="#menu" class="btn btn-secondary">View Weekly Menu</a>
+                <a href="#booking" class="btn btn-primary">Book Now</a>
             </div>
         </div>
     </header>
 
-    <!-- Features Section -->
-    <section class="features">
+    <!-- About Section -->
+    <section id="about" class="about-section">
         <div class="container">
             <div class="section-title">
-                <h2>Why Choose Vedha's Kitchen?</h2>
-                <p>Experience the taste of tradition in every bite.</p>
+                <h2>About Vedha's Kitchen</h2>
+                <p>A new culinary sunrise in Chinnasalem.</p>
             </div>
-            <div
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; text-align: center;">
-                <div class="feature-card">
-                    <i class="fas fa-leaf"
-                        style="font-size: 3rem; color: var(--color-accent); margin-bottom: 1rem;"></i>
-                    <h3>100% Vegetarian</h3>
-                    <p>Pure vegetarian meals prepared with traditional Brahmin recipes and hygiene.</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-box-open"
-                        style="font-size: 3rem; color: var(--color-secondary); margin-bottom: 1rem;"></i>
-                    <h3>Hot Pack Delivery</h3>
-                    <p>Meals delivered in hot packs to ensure freshness and warmth for Breakfast, Lunch, and Dinner.</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-heartbeat"
-                        style="font-size: 3rem; color: var(--color-primary); margin-bottom: 1rem;"></i>
-                    <h3>Healthy Options</h3>
-                    <p>Special diabetic food, salad bowls, and healthy snacks available upon request.</p>
+            <div class="about-content centered">
+                <p class="lead-text">From <strong>17.11.2025</strong>, enjoy 100% vegetarian, hygienic, home-cooked
+                    meals.</p>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt icon"></i>
+                        <h3>Address</h3>
+                        <p>No. 4, Chinnasalem, Kallakurichi District</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-calendar-alt icon"></i>
+                        <h3>Operating Days</h3>
+                        <p>Monday to Sunday</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Plans Preview -->
-    <section class="plans-preview" style="background-color: #f9f9f9;">
+    <!-- Services Section -->
+    <section id="services" class="services-section">
         <div class="container">
             <div class="section-title">
-                <h2>Flexible Subscription Plans</h2>
-                <p>Choose what works best for you.</p>
+                <h2>Services Offered</h2>
+                <p>Tailored to your needs.</p>
             </div>
-            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-                <div
-                    style="background: white; padding: 2rem; border-radius: 10px; box-shadow: var(--shadow-md); text-align: center; min-width: 250px;">
-                    <h3>Daily</h3>
-                    <p>Perfect for trying us out.</p>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-crown icon icon-secondary"></i>
+                    <h3>Premium Food</h3>
+                    <p>High-quality ingredients for a premium taste.</p>
                 </div>
-                <div
-                    style="background: white; padding: 2rem; border-radius: 10px; box-shadow: var(--shadow-md); text-align: center; min-width: 250px; border: 2px solid var(--color-secondary);">
-                    <h3>Weekly</h3>
-                    <p>Hassle-free food for the week.</p>
+                <div class="feature-card">
+                    <i class="fas fa-heartbeat icon icon-primary"></i>
+                    <h3>Diabetic Food</h3>
+                    <p>Healthy, balanced meals for diabetic care.</p>
                 </div>
-                <div
-                    style="background: white; padding: 2rem; border-radius: 10px; box-shadow: var(--shadow-md); text-align: center; min-width: 250px;">
-                    <h3>Monthly</h3>
-                    <p>Best value for regular meals.</p>
+                <div class="feature-card">
+                    <i class="fas fa-utensils icon icon-accent"></i>
+                    <h3>All Meals</h3>
+                    <p>Breakfast, Lunch, and Dinner options available.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-box icon icon-secondary"></i>
+                    <h3>Packages</h3>
+                    <p>Daily, Weekly, Monthly, and Corporate packages.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-temperature-high icon icon-primary"></i>
+                    <h3>Hot Pack Delivery</h3>
+                    <p>Insulated carriers to keep your food warm.</p>
                 </div>
             </div>
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="menu.html" class="btn btn-primary">View Full Menu</a>
+        </div>
+    </section>
+
+    <!-- Weekly Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Weekly Menu</h2>
+                <p>Authentic South Indian Dishes</p>
+            </div>
+            <div class="table-wrap">
+                <table class="menu-table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Breakfast (காலை)</th>
+                            <th>Lunch (மதிய உணவு)</th>
+                            <th>Dinner (இரவு)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="day-col">Monday (திங்கள்)</td>
+                            <td>இட்லி (3), மினி மசாலா தோசை, சாம்பார் + தேங்காய் சட்னி + புதினா சட்னி</td>
+                            <td>கலவை காய் சாம்பார் + பீன்ஸ் பொரியல் + பாசிப்பருப்பு கூட்டு</td>
+                            <td>இட்லி (3) + பணியாரம், தக்காளி குருமா, தேங்காய் சட்னி</td>
+                        </tr>
+                        <tr>
+                            <td class="day-col">Tuesday (செவ்வாய்)</td>
+                            <td>இட்லி (3), ரவா கிச்சடி, சாம்பார் + தக்காளி சட்னி + தேங்காய் சட்னி</td>
+                            <td>சாம்பார் + வத்தல் குழம்பு + உருளைக்கிழங்கு வறுவல் + கீரை கூட்டு</td>
+                            <td>இட்லி (3) + நவதானிய தோசை, தக்காளி சாம்பார், தேங்காய் சட்னி</td>
+                        </tr>
+                        <tr>
+                            <td class="day-col">Wednesday (புதன்)</td>
+                            <td>இட்லி (3), ரவா தோசை, சாம்பார் + புதினா சட்னி + தேங்காய் சட்னி</td>
+                            <td>சாம்பார் + ஸ்பெஷல் குழம்பு, தக்காளி ரசம் + முட்டைக்கோஸ் பொரியல் + சௌ சௌ கூட்டு</td>
+                            <td>இட்லி (3) + சப்பாத்தி (3), வெஜ் குருமா, தேங்காய் சட்னி</td>
+                        </tr>
+                        <tr>
+                            <td class="day-col">Thursday (வியாழன்)</td>
+                            <td>இட்லி (3), சாம்பார், பூரி + மசாலா, தேங்காய் சட்னி + தக்காளி சட்னி</td>
+                            <td>சாம்பார் + மோர் குழம்பு + பருப்பு உசிலி + கேரட் பொரியல்</td>
+                            <td>இட்லி (3) + இடியாப்பம் + தேங்காய் பால் + வெஜ் குருமா</td>
+                        </tr>
+                        <tr>
+                            <td class="day-col">Friday (வெள்ளி)</td>
+                            <td>இட்லி (3), மினி பொடி தோசை, சாம்பார் + தக்காளி சட்னி + தேங்காய் சட்னி</td>
+                            <td>அரைச்சுவிட்ட சாம்பார் + பீன்ஸ்-கேரட் பொரியல் + புடலங்காய் கூட்டு</td>
+                            <td>இட்லி (3) + வடகறி, தோசை + சாம்பார் + தேங்காய் சட்னி</td>
+                        </tr>
+                        <tr>
+                            <td class="day-col">Saturday (சனி)</td>
+                            <td>இட்லி (3), மini வெஜ் தோசை, சாம்பார் + தக்காளி சட்னி + தேங்காய் சட்னி</td>
+                            <td>சாம்பார் + கார குழம்பு + வெண்டைக்காய் வறுவல் + பாசிப்பருப்பு கூட்டு</td>
+                            <td>இட்லி (3) + தயிர் சேமியா, சாம்பார் + தேங்காய் சட்னி + புதினா சட்னி</td>
+                        </tr>
+                        <tr>
+                            <td class="day-col">Sunday (ஞாயிறு)</td>
+                            <td>இட்லி, வெண் பொங்கல், சாம்பார் + தேங்காய் சட்னி + புதினா சட்னி</td>
+                            <td>வெஜ் பிரியாணி / வெரைட்டி ரைஸ் + ரைத்தா + பொரியல்</td>
+                            <td>பருப்பு அடை, இட்லி (2) + அவியல் + சாம்பார் + தேங்காய் சட்னி</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who It's For Section -->
+    <section id="who-its-for" class="who-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Who It's For</h2>
+                <p>Serving everyone with love.</p>
+            </div>
+            <div class="who-grid">
+                <div class="who-card">
+                    <i class="fas fa-user-graduate"></i>
+                    <h3>Students</h3>
+                </div>
+                <div class="who-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Office-goers</h3>
+                </div>
+                <div class="who-card">
+                    <i class="fas fa-building"></i>
+                    <h3>Private Companies</h3>
+                </div>
+                <div class="who-card">
+                    <i class="fas fa-user-clock"></i>
+                    <h3>Senior Citizens</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Book Your Meal</h2>
+                <p>Start your healthy journey today.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p class="phone-number"><i class="fas fa-phone-alt"></i> 86109 22736</p>
+                    <p class="phone-number"><i class="fas fa-phone-alt"></i> 98949 99488</p>
+                    <a href="https://wa.me/919894999488" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Chat
+                        on WhatsApp</a>
+                </div>
+                <div class="form-card">
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="Your Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <label for="package">Package Type</label>
+                            <select id="package" name="package">
+                                <option value="daily">Daily</option>
+                                <option value="weekly">Weekly</option>
+                                <option value="monthly">Monthly</option>
+                                <option value="corporate">Corporate</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Start Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Book Now</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -127,36 +265,17 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <h3>Vedha's Kitchen</h3>
-                    <p>Traditional Brahmin Home Cooking in Chinnasalem.</p>
-                    <div style="margin-top: 1rem;">
-                        <i class="fab fa-whatsapp" style="margin-right: 10px;"></i>
-                        <a href="https://www.instagram.com/vedha_skitchenchinnasalem?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                            target="_blank"><i class="fab fa-instagram" style="margin-right: 10px;"></i></a>
-                        <i class="fab fa-facebook"></i>
-                    </div>
+            <div class="footer-content centered">
+                <div class="social-links">
+
+                    <a href="https://www.instagram.com/vedha_skitchenchinnasalem?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/919894999488" class="social-icon"><i class="fab fa-whatsapp"></i></a>
                 </div>
-                <div>
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="menu.html">Weekly Menu</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Contact Us</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> No.4, Thiru.Vi.Ka.Nagar, Opp. Sengunthar Mandapam,
-                        Chinnasalem.</p>
-                    <p><i class="fas fa-phone"></i> +91 86109 27275</p>
-                    <p><i class="fas fa-phone"></i> +91 98949 99488</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Vedha's Kitchen. All rights reserved.</p>
+                <p class="copyright">Copyright © Vedha’s Kitchen 2025</p>
+                <a href="https://www.rturox.com/">
+                    <p>“devoloped by Rturox-Tech”</p>
+                </a>
             </div>
         </div>
     </footer>
