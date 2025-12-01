@@ -132,6 +132,18 @@ img {
     text-align: center;
 }
 
+.hero .btn {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    border-color: var(--color-white);
+}
+
+.hero .btn:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border-color: var(--color-secondary);
+}
+
 /* Navbar */
 .navbar {
     background-color: var(--color-white);
@@ -361,47 +373,52 @@ section {
     background-color: white;
 }
 
-.table-wrap {
-    overflow-x: auto;
-    border-radius: 10px;
+.meal-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.meal-box {
+    background: var(--color-bg-light);
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    text-align: center;
     box-shadow: var(--shadow-md);
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
 }
 
-.menu-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
-    min-width: 800px;
-    /* Ensure table doesn't squish too much */
+.meal-box:hover {
+    transform: translateY(-5px);
 }
 
-.menu-table th,
-.menu-table td {
-    padding: 1.2rem;
-    text-align: left;
-    border-bottom: 1px solid #eee;
+.meal-box .icon {
+    font-size: 3rem;
+    color: var(--color-secondary);
+    margin-bottom: 1.5rem;
 }
 
-.menu-table th {
-    background-color: var(--color-primary);
-    color: white;
-    font-family: var(--font-heading);
-    font-size: 1.1rem;
-    white-space: nowrap;
-}
-
-.menu-table tr:last-child td {
-    border-bottom: none;
-}
-
-.menu-table tr:hover {
-    background-color: #f9f9f9;
-}
-
-.day-col {
-    font-weight: bold;
+.meal-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
     color: var(--color-primary);
-    background-color: #fdfdfd;
+}
+
+.tamil-text {
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.meal-box p:last-child {
+    color: var(--color-text-light);
+    line-height: 1.6;
 }
 
 /* Who It's For Section */
