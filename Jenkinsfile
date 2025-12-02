@@ -4,7 +4,7 @@ pipeline {
     environment {
         IMAGE_NAME      = "vedhas-kitchen"
         CONTAINER_NAME  = "vedhas-container"
-        HOST_PORT       = "80"
+        HOST_PORT       = "8081"
         CONTAINER_PORT  = "80"
         REPO_URL        = "https://github.com/ParthaV30/VedhasKitchen.git"
     }
